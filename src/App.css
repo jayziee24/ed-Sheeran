@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-container {
+  display: flex;
+  text-align: flex-start;
+  margin-bottom: 20px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  background-position: top;
+  height: 30vh; /* Set height to 30% of viewport height */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.banner-heading {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: white;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 135px;
+}
+
+.banner-description {
+  font-size: 1rem;
+  color: white;
+  padding-left: 35px;
+}
+
+.content-container {
+  background-color: #152850;
+  padding: 20px;
+  border-radius: 5px;
+
+  margin-top: 0px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-heading {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.playlists-container {
+  margin-top: 20px;
+}
+
+.playlist {
+  list-style: none;
+  padding: 0;
+}
+
+.no-songs-found {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+}
+
+.track-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.track-details {
+  flex: 1;
+  color: white;
+}
+
+.track-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.track-genre,
+.track-duration {
+  font-size: 1rem;
+  color: #888;
+}
+
+.delete-button {
+  background-color: rgb(79, 79, 207);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.delete-button:hover {
+  background-color: #888;
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+.delete-button svg {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
